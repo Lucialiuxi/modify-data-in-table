@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+#tab{
+	border:5px solid #333;
+}
+#tab th,#tab td{
+	width: 200px;
+	text-align: center;
+	border: 1px solid #333;
+}
+#tab thead{
+	background:#ccc;
+}
+input{
+	margin-bottom: 10px;
+}
+</style>
+    
+<script src="./index4.js"></script>
+
+</head>
+<body>
+	<form action="" name="form">
+		<p>
+			姓名:<input type="text" id="userName" name="username"/>
+		</p>
+		<p>
+			年龄:<input type="text" id="age" name="age"/>
+		</p>
+		<p>
+			性别: <select name="sex" id="sex">
+				<option value=" 男 ">男</option>
+				<option value="女">女</option>
+			</select>
+		</p>
+		<p>
+			<input type="button" id="add" value="添加" name="add"/>
+		</p>
+	</form>
+    <input type="button" id="delectAll" value="删除选中"  class="btn"> 
+    <input type="button" value="年龄从小到大" id="ageSort"  class="btn"> 
+    
+	<table id="tab">
+		<thead>
+			<th>全选<input id="selectAll" type="checkbox"></th>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>操作</th>
+		</thead>
+		<tbody>
+            <!-- <tr>
+                <td>
+                    <input type="checkbox"/>
+                </td>
+                <td>1</td>
+                <td>LEO</td>
+                <td>36</td>
+                <td>男</td>
+                <td>
+                    <a href="javascript:;">删除</a>
+                </td>
+            </tr>			 -->
+		</tbody>
+    </table>
+
+</body>
+</html>
